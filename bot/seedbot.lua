@@ -449,138 +449,133 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+»SuperGroup Commands:
 
-!info
-Displays general info about the SuperGroup
+》info
+〉دریافت اطلاعات گروه
 
-!admins
-Returns SuperGroup admins list
+》admins
+〉لیست ادمین های 2 ستاره
 
-!owner
-Returns group owner
+》owner
+〉ایدی صاحب گروه
 
-!modlist
-Returns Moderators list
+》modlist
+〉لیست ادمین های 1 ستاره
 
-!bots
-Lists bots in SuperGroup
+》bots
+〉لیست ربات ها
 
-!who
-Lists all users in SuperGroup
+》who
+〉لیست کاربران 
 
-!block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
+》block
+〉اخراج فرد با ریپلای
 
-!ban
-Bans user from the SuperGroup
+》ban
+〉بن کردن فرد 
 
-!unban
-Unbans user from the SuperGroup
+》unban
+〉حذف بن فرد
 
-!id
-Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
+》id
+〉دریافت ایدی گروه یا فردی 
 
-!id from
-Get ID of user message is forwarded from
+》id from
+〉دریافت ایدی کاربر با فوروارد
 
-!kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
+》kickme
+〉خروج از گروه
 
-!setowner
-Sets the SuperGroup owner
+》setowner
+〉انتخاب صاحب گروه
 
-!promote [username|id]
-Promote a SuperGroup moderator
+》setadmin
+〉ترفیع به مقام ادمین 2 ستاره
+*ادمین های 2 ستاره در لیست ادمین های گروه قرار میگیرند
 
-!demote [username|id]
-Demote a SuperGroup moderator
+》demoteadmin
+〉حذف از مقام ادمین 2 ستاره
 
-!setname
-Sets the chat name
+》promote [username|id]
+〉ترفیع به مقام ادمین 1 ستاره
+*ادمین های 1 ستاره داخل لیست ادمین ها قرار نمیگیرند ولی ربات به دستورات آن ها گوش میدهد
 
-!setphoto
-Sets the chat photo
+》demote [username|id]
+〉حذف از مقام 1 ستاره
 
-!setrules
-Sets the chat rules
+》setname
+〉تنظیم اسم گروه
 
-!setabout
-Sets the about section in chat info(members list)
+》setphoto
+〉تنظیم عکس گروه
 
-!save [value] <text>
-Sets extra info for chat
+》setrules
+〉تنظیم قوانین گروه
 
-!get [value]
-Retrieves extra info for chat by value
+》setabout
+〉تنظیم موضوع گروه 
 
-!newlink
-Generates a new group link
+》save [value] <text>
+〉ذخیره متن 
 
-!link
-Retireives the group link
+》get [value]
+〉دریافت متن های سیو شده 
 
-!rules
-Retrieves the chat rules
+》newlink
+〉ساخت لینک جدید
 
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
+》link
+〉دریافت لینک گروه
 
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
+》rules
+〉دریافت قوانین گروه
 
-!mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
+》lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+〉قفل کردن تنظیمات گروه 
 
-!unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
+》unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+〉باز کردن تنظیمات گروه
 
-!setflood [value]
-Set [value] as flood sensitivity
+》mute [all|audio|gifs|photo|video|service]
+موت کردن 
 
-!settings
-Returns chat settings
+》unmute [all|audio|gifs|photo|video|service]
+〉بازکردن موارد موت شده
 
-!muteslist
-Returns mutes for chat
+》setflood [value]
+〉تنظیم حساسیت به اسپم
 
-!muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
+》settings
+〉دریافت تنظیمات گروه
 
-!mutelist
-Returns list of muted users in chat
+》muteslist
+دریافت لیست  فایل های موت شده
 
-!banlist
-Returns SuperGroup ban list
+》muteuser [username]
+〉موت کردن فرد 
+*فرد موت شده هر پیامی ارسال کند پیام بلا فاصله پاک میشه
+*برای حذف موت فرد موت شده از همین دستور استفاده کنید
 
-!clean [rules|about|modlist|mutelist]
+》mutelist
+〉لیست افراد موت شده
 
-!del
-Deletes a message by reply
+》banlist
+〉لیست افراد بن شده
 
-!public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
+》clean [rules|about|modlist|mutelist]
+〉پاک کردن گذینه های بالا
 
-!res [username]
-Returns users name and id by username
+》del
+〉حذف پیام در گروه با ریپلای
 
+》public [yes|no]
+〉تنظیم عمومی بودن گروه
 
-!log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
+》res [username]
+〉دریافت نام و ایدی کاربر با نام کاربری
 
-**You can use "#", "!", or "/" to begin all commands
+**Do not need ! / # use
 
 *Only owner can add members to SuperGroup
 (use invite link to invite)
@@ -588,6 +583,10 @@ Returns group logs
 *Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
 
 *Only owner can use res, setowner, promote, demote, and log commands
+
+*channels: @viper_ch & @creat_anti_spam
+
+*sudo: @anonymous1221
 
 ]],
   }
